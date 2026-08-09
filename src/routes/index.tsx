@@ -113,21 +113,21 @@ function Index() {
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-32 pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pt-40 lg:pb-28">
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-24 pb-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pt-32 lg:pb-16">
           <div>
             <p className="text-xs font-bold tracking-[0.3em] text-primary uppercase">
               Post Frame Specialists
             </p>
-            <h1 className="mt-5 text-5xl leading-[0.92] sm:text-6xl lg:text-7xl">
+            <h1 className="mt-4 text-5xl leading-[0.92] sm:text-6xl lg:text-7xl">
               Let&apos;s get going on your <span className="text-gradient-brand">pole barn</span>{" "}
               today
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               From the foundation to the ridge, we build turn-key post frame structures with our own
               crews. Storage, shops, barndominiums and agricultural buildings engineered to outlast
               the mortgage — and priced honestly before a single post goes in the ground.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-6">
+            <div className="mt-6 flex flex-wrap items-center gap-6">
               <a
                 href="#quote"
                 className="bg-gradient-brand rounded-md px-7 py-3.5 text-sm font-bold tracking-widest text-primary-foreground uppercase shadow-[var(--shadow-glow)] transition-transform hover:-translate-y-0.5"
@@ -141,7 +141,7 @@ function Index() {
                 <Phone className="size-4" /> (555) 555-1234
               </a>
             </div>
-            <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-border pt-8">
+            <dl className="mt-8 grid max-w-lg grid-cols-3 gap-6 border-t border-border pt-6">
               {[
                 ["450+", "Buildings raised"],
                 ["12", "Years in the field"],
@@ -161,7 +161,7 @@ function Index() {
 
           <div
             id="quote"
-            className="scroll-mt-24 self-start rounded-2xl border border-border bg-card/95 p-6 shadow-[var(--shadow-hard)] backdrop-blur lg:mt-8"
+            className="scroll-mt-24 self-start rounded-2xl border border-border bg-card/95 p-5 shadow-[var(--shadow-hard)] backdrop-blur lg:mt-0"
           >
             <h2 className="text-2xl">Get your free quote</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
