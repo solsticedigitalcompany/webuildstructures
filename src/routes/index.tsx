@@ -98,8 +98,9 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="absolute inset-x-0 top-0 z-30">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-border/50 bg-background/70 backdrop-blur-md">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+
           <a href="#top" className="text-xl leading-none font-black tracking-tight">
             <span className="block font-[family-name:var(--font-display)] text-primary">
               WE BUILD
@@ -236,7 +237,7 @@ function Index() {
         </div>
       </section>
 
-      <section id="why" className="border-y border-border bg-surface py-20">
+      <section id="why" className="border-y border-border bg-surface py-20 scroll-mt-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-bold tracking-[0.3em] text-accent uppercase">Who we are</p>
@@ -264,7 +265,7 @@ function Index() {
         </div>
       </section>
 
-      <section id="process" className="py-20">
+      <section id="process" className="scroll-mt-20 py-20">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-4xl sm:text-5xl">Foundation to ridge, one crew</h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
@@ -295,7 +296,7 @@ function Index() {
         </div>
       </section>
 
-      <section id="repairs" className="border-y border-border bg-surface py-20">
+      <section id="repairs" className="border-y border-border bg-surface py-20 scroll-mt-20">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 lg:grid-cols-2">
           <div>
             <h2 className="text-4xl sm:text-5xl">
