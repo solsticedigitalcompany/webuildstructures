@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 import { QuoteForm } from "@/components/QuoteForm";
+import brandLogo from "@/assets/we-build-structures-logo.avif.asset.json";
 import heroBarn from "@/assets/hero-barn.jpg";
 import crewFraming from "@/assets/crew-framing.jpg";
 import concreteSlab from "@/assets/concrete-slab.jpg";
