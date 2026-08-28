@@ -339,9 +339,14 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-8 sm:grid-cols-3">
             <div>
-              <p className="font-[family-name:var(--font-display)] text-xl text-primary">
-                WE BUILD STRUCTURES
-              </p>
+              <img
+                src={brandLogo.url}
+                alt="We Build Structures logo"
+                loading="lazy"
+                width={900}
+                height={514}
+                className="h-16 w-auto"
+              />
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Turn-key post frame buildings for storage, housing and agriculture.
               </p>
