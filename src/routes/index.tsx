@@ -86,10 +86,19 @@ const steps = [
   },
 ];
 
+const navLinks = [
+  { href: "#process", label: "Our Process" },
+  { href: "#why", label: "Why Us" },
+  { href: "#repairs", label: "Repairs" },
+  { href: "#quote", label: "Get A Quote" },
+];
+
 function Index() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
-      <header className="absolute inset-x-0 top-0 z-20">
+      <header className="absolute inset-x-0 top-0 z-30">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
           <a href="#top" className="text-xl leading-none font-black tracking-tight">
             <span className="block font-[family-name:var(--font-display)] text-primary">
@@ -100,21 +109,61 @@ function Index() {
             </span>
           </a>
           <nav className="hidden items-center gap-8 text-xs font-bold tracking-widest uppercase md:flex">
-            <a href="#process" className="hover:text-primary">
-              Our Process
-            </a>
-            <a href="#why" className="hover:text-primary">
-              Why Us
-            </a>
-            <a href="#repairs" className="hover:text-primary">
-              Repairs
-            </a>
-            <a href="#quote" className="text-primary">
-              Get A Quote
-            </a>
+            {navLinks.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className={l.href === "#quote" ? "text-primary" : "hover:text-primary"}
+              >
+                {l.label}
+              </a>
+            ))}
           </nav>
+          <button
+            type="button"
+            onClick={() => setMenuOpen((o) => !o)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-nav"
+            className="inline-flex size-11 items-center justify-center rounded-md border border-border bg-background/70 text-foreground backdrop-blur transition-colors hover:border-primary/60 hover:text-primary md:hidden"
+          >
+            {menuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
         </div>
+
+        {menuOpen && (
+          <nav
+            id="mobile-nav"
+            className="mx-6 overflow-hidden rounded-xl border border-border bg-background/95 shadow-[var(--shadow-hard)] backdrop-blur-md md:hidden"
+          >
+            <ul className="divide-y divide-border/70">
+              {navLinks.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    onClick={() => setMenuOpen(false)}
+                    className={`block px-5 py-4 text-sm font-bold tracking-widest uppercase ${
+                      l.href === "#quote" ? "text-primary" : "hover:text-primary"
+                    }`}
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a
+                  href="tel:+15555551234"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-2 px-5 py-4 text-sm font-bold tracking-widest uppercase hover:text-primary"
+                >
+                  <Phone className="size-4" /> (555) 555-1234
+                </a>
+              </li>
+            </ul>
+          </nav>
+        )}
       </header>
+
 
       <section id="top" className="relative isolate overflow-hidden">
         <img
