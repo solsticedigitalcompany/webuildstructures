@@ -132,7 +132,7 @@ function Index() {
                 href="#quote"
                 className="bg-gradient-brand rounded-md px-7 py-3.5 text-sm font-bold tracking-widest text-primary-foreground uppercase shadow-[var(--shadow-glow)] transition-transform hover:-translate-y-0.5"
               >
-                Request a free quote
+                Request Free Quote
               </a>
               <a
                 href="tel:+15555551234"
