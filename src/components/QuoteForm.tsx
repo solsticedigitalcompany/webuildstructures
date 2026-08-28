@@ -99,7 +99,7 @@ export function QuoteForm({ compact = false }: { compact?: boolean }) {
         type="submit"
         className="bg-gradient-brand w-full rounded-md px-5 py-3 text-sm font-bold tracking-widest text-primary-foreground uppercase transition-transform hover:-translate-y-0.5"
       >
-        Request a free quote
+        Request Free Quote
       </button>
       <p className="text-[11px] leading-relaxed text-muted-foreground">
         No obligation. No pushy sales calls. Just straight numbers on your build.

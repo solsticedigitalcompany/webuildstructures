@@ -132,7 +132,7 @@ function Index() {
                 href="#quote"
                 className="bg-gradient-brand rounded-md px-7 py-3.5 text-sm font-bold tracking-widest text-primary-foreground uppercase shadow-[var(--shadow-glow)] transition-transform hover:-translate-y-0.5"
               >
-                Request a free quote
+                Request Free Quote
               </a>
               <a
                 href="tel:+15555551234"
@@ -306,6 +306,26 @@ function Index() {
           </p>
         </div>
       </footer>
+
+      {/* Sticky mobile CTA */}
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border/60 bg-background/70 px-4 py-3 backdrop-blur-md md:hidden">
+        <div className="flex items-center gap-3">
+          <a
+            href="#quote"
+            className="bg-gradient-brand flex-1 rounded-md px-5 py-3 text-center text-sm font-bold tracking-widest text-primary-foreground uppercase opacity-95 shadow-[var(--shadow-glow)]"
+          >
+            Request Free Quote
+          </a>
+          <a
+            href="tel:+15555551234"
+            aria-label="Call We Build Structures"
+            className="inline-flex size-11 items-center justify-center rounded-md border border-primary/60 text-primary"
+          >
+            <Phone className="size-5" />
+          </a>
+        </div>
+      </div>
+      <div className="h-20 md:hidden" />
     </div>
   );
 }
