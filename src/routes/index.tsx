@@ -98,8 +98,9 @@ function Index() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="absolute inset-x-0 top-0 z-30">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-border/50 bg-background/70 backdrop-blur-md">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+
           <a href="#top" className="text-xl leading-none font-black tracking-tight">
             <span className="block font-[family-name:var(--font-display)] text-primary">
               WE BUILD
