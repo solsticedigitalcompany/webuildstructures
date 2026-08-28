@@ -1,11 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Hammer, HardHat, ShieldCheck, Timer, Phone, MapPin, Mail } from "lucide-react";
+import { useState } from "react";
+import {
+  Hammer,
+  HardHat,
+  ShieldCheck,
+  Timer,
+  Phone,
+  MapPin,
+  Mail,
+  Menu,
+  X,
+} from "lucide-react";
 
 import { QuoteForm } from "@/components/QuoteForm";
 import heroBarn from "@/assets/hero-barn.jpg";
 import crewFraming from "@/assets/crew-framing.jpg";
 import concreteSlab from "@/assets/concrete-slab.jpg";
 import finishedInterior from "@/assets/finished-interior.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
