@@ -101,13 +101,14 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-40 border-b border-border/50 bg-background/70 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-          <a href="#top" className="text-xl leading-none font-black tracking-tight">
-            <span className="block font-[family-name:var(--font-display)] text-primary">
-              WE BUILD
-            </span>
-            <span className="text-gradient-brand block font-[family-name:var(--font-display)]">
-              STRUCTURES
-            </span>
+          <a href="#top" aria-label="We Build Structures home" className="block">
+            <img
+              src={brandLogo.url}
+              alt="We Build Structures logo"
+              width={900}
+              height={514}
+              className="h-12 w-auto sm:h-14"
+            />
           </a>
           <nav className="hidden items-center gap-8 text-xs font-bold tracking-widest uppercase md:flex">
             {navLinks.map((l) => (
